@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20150305040649) do
     t.boolean  "availability", default: true
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+    t.image    "image",
   end
 
   create_table "users", force: :cascade do |t|

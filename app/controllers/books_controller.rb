@@ -4,17 +4,16 @@ class BooksController < ApplicationController
   respond_to :html
 
   def index
-    @books = Book.all
+    @books = Book.where(availability: true)
     respond_with(@books)
   end
 
   def show
-    respond_with(@book)
+    respond_with(@books)
   end
 
   def new
     @book = Book.new
-    respond_with(@books)
   end
 
   def edit
@@ -70,6 +69,6 @@ class BooksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def book_params
-      params.require(:book).permit(:name, :author, :description, :price, :availability)
+      params.require(:book).permit(:name, :author, :description, :price, :image, :availability)
     end
 end
