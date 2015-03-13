@@ -51,3 +51,5 @@ gem 'devise'
 
 #In Terminal write 'bundle update coffee-script-source'
 gem 'coffee-script-source', '1.8.0'
+
+gem 'cancan'
