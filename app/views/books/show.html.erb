@@ -1,15 +1,15 @@
 <div class="container">
 <div class="row">
  
-<div class="col-md-3">
-<%= image_tag "book.jpg", class: "img-responsive" %>
+<div class="col-md-4">
+<%= image_tag @book.image, class: "img-responsive" %>
 </div>
  
-<div class="col-md-6">
-<div class="col-md-12">
+<div class="col-md-8">
+<div class="col-md-8">
 <h3><%= @book.name %> by <%= @book.author %></h3>
 <p class="justify"><%= @book.description %></p>
-<h4 class="text-right">$<%= @book.price.to_f / 100.round / 1 %></h4>
+<h4 class="text-right">$<%= @book.price.to_f / 100 %></h4>
 </div>
  
 </div>
