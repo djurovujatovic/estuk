@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root "pages#home"
   get 'books' => "pages#books"
+  get 'dashboard' => "pages#dashboard"
 
 
   # Example of regular route:
