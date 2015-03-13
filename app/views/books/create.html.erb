@@ -1,0 +1,16 @@
+<div class="container">
+<div class="row">
+ 
+<div class="col-md-4">
+<%= image_tag @book.image, class: "img-responsive" %>
+</div>
+ 
+<div class="col-md-8">
+<div class="col-md-8">
+<h3><%= @book.name %> by <%= @book.author %></h3>
+<p class="justify"><%= @book.description %></p>
+<h4 class="text-right">$<%= @book.price.to_f / 100 %></h4>
+</div>
+ 
+</div>
+</div>
