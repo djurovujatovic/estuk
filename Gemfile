@@ -55,3 +55,5 @@ gem 'coffee-script-source', '1.8.0'
 gem 'cancan'
 
 gem 'dotenv-rails', groups: [:development]
+
+gem 'friendly_id'
